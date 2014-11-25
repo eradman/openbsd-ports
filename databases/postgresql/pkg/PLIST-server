@@ -15,7 +15,7 @@
 @bin bin/pg_resetxlog
 @bin bin/pg_xlogdump
 @bin bin/postgres
-@bin bin/postmaster
+bin/postmaster
 include/postgresql/server/
 include/postgresql/server/access/
 include/postgresql/server/access/attnum.h

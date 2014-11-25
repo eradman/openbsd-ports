@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.188 2014/04/21 22:15:09 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.194 2014/10/16 00:08:54 jeremy Exp $
 
 COMMENT-main=	PostgreSQL RDBMS (client)
 COMMENT-server=	PostgreSQL RDBMS (server)
@@ -141,8 +141,14 @@ DOCS=	${WRKSRC}/COPYRIGHT ${WRKSRC}/HISTORY \
 pre-build:
 	touch ${WRKSRC}/doc/src/sgml/*-stamp
 
+INSTALL_REPLACE = 's/^install_bin = .*$$/ifdef BSD_INSTALL_SCRIPT\ninstall_bin
+INSTALL_REPLACE += = \$$\(subst -m 755,,\$${BSD_INSTALL_SCRIPT}\)
+INSTALL_REPLACE += \nelse\ninstall_bin = \/usr\/bin\/install -c -o ${BINOWN}
+INSTALL_REPLACE += -g ${BINGRP}\nendif/'
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/postgresql
 	${INSTALL_DATA} ${DOCS} ${PREFIX}/share/doc/postgresql
+	perl -i -pe ${INSTALL_REPLACE} \
+		${PREFIX}/lib/postgresql/pgxs/src/Makefile.global
 
 .include <bsd.port.mk>
