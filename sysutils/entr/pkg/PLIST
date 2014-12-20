@@ -1,3 +1,4 @@
 @comment $OpenBSD: $
 @bin bin/entr
+@bin bin/reload-browser
 @man man/man1/entr.1
