@@ -3,7 +3,6 @@
 COMMENT =	run arbitrary commands when files change
 
 DISTNAME =	entr-3.0
-REVISION =	0
 REV =		d69fc3f5af94
 
 CATEGORIES =	sysutils
