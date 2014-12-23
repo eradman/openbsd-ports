@@ -1,7 +1,7 @@
 # $OpenBSD: $
 
 COMMENT =	lossy PNG compressor
-DISTNAME =	pngquant-2.1.0
+DISTNAME =	pngquant-2.3.0
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://pngquant.org/
@@ -13,6 +13,7 @@ EXTRACT_SUFX =	-src.tar.bz2
 # BSD-like, see COPYRIGHT
 PERMIT_PACKAGE_CDROM =	Yes
 
+BUILD_DEPENDS =	shells/bash
 LIB_DEPENDS =	graphics/png
 
 WANTLIB +=	c m z png
