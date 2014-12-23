@@ -1,0 +1,8 @@
+pcc-libs contains helper functions for some internal stuff in pcc,
+like floating point, long long, complex etc...
+
+Going back a bunch of years in history pcc-libs were not needed for
+the BSD targets; most of the support functions were provided by
+libc.  All other targets needed pcc-libs though.  Due to this
+pcc-libs has been handled as a separate packet and maintained as
+such.
