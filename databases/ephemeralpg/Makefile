@@ -1,6 +1,6 @@
 # $OpenBSD: $
 
-COMMENT =	quickly spin up a temporary Postgres test databases
+COMMENT =	quickly spin up a temporary Postgres test database
 
 DISTNAME =	ephemeralpg-1.0
 REV =		55f7baa47c00
