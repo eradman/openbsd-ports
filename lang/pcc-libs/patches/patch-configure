@@ -1,0 +1,11 @@
+$OpenBSD$
+--- configure.orig	Sat Dec  6 05:06:59 2014
++++ configure	Thu Jan  8 12:51:18 2015
+@@ -2046,6 +2046,7 @@ case "$target_os" in
+ 	targos=openbsd
+ 	case "$target_cpu" in
+ 	    i?86) targmach=i386 ;;
++	    x86_64) targmach=amd64 ;;
+ 	    vax) targmach=vax ;;
+ 	    powerpc) targmach=powerpc endian=big ;;
+ 	    sparc64) targmach=sparc64 endian=big ;;
