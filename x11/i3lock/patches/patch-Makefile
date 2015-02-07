@@ -1,0 +1,34 @@
+$OpenBSD$
+--- Makefile.orig	Fri Jul 18 14:25:02 2014
++++ Makefile	Sat Feb  7 14:38:48 2015
+@@ -1,5 +1,6 @@
++PREFIX ?= /usr/local
++MANPREFIX = ${PREFIX}/man
+ INSTALL=install
+-PREFIX=/usr
+ SYSCONFDIR=/etc
+ 
+ # Check if pkg-config is installed, we need it for building CFLAGS/LIBS
+@@ -9,7 +10,6 @@ endif
+ 
+ CFLAGS += -std=c99
+ CFLAGS += -pipe
+-CFLAGS += -Wall
+ CPPFLAGS += -D_GNU_SOURCE
+ CFLAGS += $(shell pkg-config --cflags cairo xcb-dpms xcb-xinerama xcb-atom xcb-image xcb-xkb xkbcommon xkbcommon-x11)
+ LIBS += $(shell pkg-config --libs cairo xcb-dpms xcb-xinerama xcb-atom xcb-image xcb-xkb xkbcommon xkbcommon-x11)
+@@ -35,10 +35,10 @@ clean:
+ 	rm -f i3lock ${FILES} i3lock-${VERSION}.tar.gz
+ 
+ install: all
+-	$(INSTALL) -d $(DESTDIR)$(PREFIX)/bin
+-	$(INSTALL) -d $(DESTDIR)$(SYSCONFDIR)/pam.d
+-	$(INSTALL) -m 755 i3lock $(DESTDIR)$(PREFIX)/bin/i3lock
+-	$(INSTALL) -m 644 i3lock.pam $(DESTDIR)$(SYSCONFDIR)/pam.d/i3lock
++	${BSD_INSTALL_PROGRAM_DIR} ${DESTDIR}${PREFIX}/bin
++	$(BSD_INSTALL_PROGRAM) i3lock $(DESTDIR)$(PREFIX)/bin
++	${BSD_INSTALL_MAN_DIR} ${DESTDIR}${MANPREFIX}/man1
++	$(BSD_INSTALL_MAN) i3lock.1 $(DESTDIR)$(MANPREFIX)/man1
+ 
+ uninstall:
+ 	rm -f $(DESTDIR)$(PREFIX)/bin/i3lock
