@@ -1,3 +1,0 @@
-@comment $OpenBSD$
-@bin bin/i3lock
-@man man/man1/i3lock.1
