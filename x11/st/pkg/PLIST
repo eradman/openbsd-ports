@@ -1,0 +1,9 @@
+@comment $OpenBSD: PLIST,v 1.2 2014/06/10 07:14:50 bcallah Exp $
+@bin bin/st
+@man man/man1/st.1
+share/terminfo/
+share/terminfo/s/
+share/terminfo/s/st
+share/terminfo/s/st-256color
+share/terminfo/s/st-meta
+share/terminfo/s/st-meta-256color

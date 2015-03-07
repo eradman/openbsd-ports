@@ -1,0 +1,41 @@
+$OpenBSD: patch-config_def_h,v 1.6 2014/06/10 07:14:50 bcallah Exp $
+--- config.def.h.orig	Sat Apr  5 14:40:11 2014
++++ config.def.h	Fri Feb 20 08:27:06 2015
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
++static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=false";
+ static int borderpx = 2;
+ static char shell[] = "/bin/sh";
+ 
+@@ -59,7 +59,7 @@ static const char *colorname[] = {
+ 	"blue2",
+ 	"magenta3",
+ 	"cyan3",
+-	"gray90",
++	"gray",
+ 
+ 	/* 8 bright colors */
+ 	"gray50",
+@@ -71,6 +71,8 @@ static const char *colorname[] = {
+ 	"cyan",
+ 	"white",
+ 
++	"gray10", /* custom color */
++
+ 	[255] = 0,
+ 
+ 	/* more colors can be added after 255 to use with DefaultXX */
+@@ -82,8 +84,8 @@ static const char *colorname[] = {
+  * Default colors (colorname index)
+  * foreground, background, cursor
+  */
+-static unsigned int defaultfg = 7;
+-static unsigned int defaultbg = 0;
++static unsigned int defaultfg = 0;
++static unsigned int defaultbg = 16;
+ static unsigned int defaultcs = 256;
+ 
+ /*
