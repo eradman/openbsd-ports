@@ -2,8 +2,8 @@
 
 COMMENT =	run arbitrary commands when files change
 
-DISTNAME =	entr-3.2
-REV =		c20e34ec153a
+DISTNAME =	entr-3.3
+REV =		220131754e1c
 
 CATEGORIES =	sysutils
 
