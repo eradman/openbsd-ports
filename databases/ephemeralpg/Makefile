@@ -1,9 +1,9 @@
 # $OpenBSD: $
 
-COMMENT =	quickly spin up a temporary Postgres test database
+COMMENT =	quickly spin up a temporary PostgreSQL test database
 
-DISTNAME =	ephemeralpg-1.9
-REV =		06e84c1c8e74
+DISTNAME =	ephemeralpg-2.0
+REV =		c197ab286e00
 
 CATEGORIES =	databases
 HOMEPAGE =	https://bitbucket.org/eradman/ephemeralpg
