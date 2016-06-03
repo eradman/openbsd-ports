@@ -14,8 +14,6 @@ MAINTAINER =	Eric Radman <ericshane@eradman.com>
 # ISC
 PERMIT_PACKAGE_CDROM = Yes
 
-WANTLIB +=	c
-
 MODULES =	lang/ruby
 
 MASTER_SITES =	http://entrproject.org/code/ \
