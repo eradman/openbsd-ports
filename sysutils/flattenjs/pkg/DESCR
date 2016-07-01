@@ -1,0 +1,4 @@
+The flattenjs utility makes it filter a JSON structure with
+line-oriented utilities such as grep(1) and awk(1) by printing a
+flattened representation.  The output is compatible with the
+PostgreSQL queriy operators #> and #>>.
