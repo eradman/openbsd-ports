@@ -1,16 +1,16 @@
-$OpenBSD: patch-config_def_h,v 1.6 2014/06/10 07:14:50 bcallah Exp $
---- config.def.h.orig	Sat Apr  5 14:40:11 2014
-+++ config.def.h	Fri Feb 20 08:37:00 2015
+$OpenBSD: patch-config_def_h,v 1.7 2015/07/09 22:07:23 czarkoff Exp $
+--- config.def.h.orig	Thu Jul  9 00:02:12 2015
++++ config.def.h	Thu Jul  9 00:05:19 2015
 @@ -5,7 +5,7 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
   */
 -static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
-+static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=false";
++static char font[] = "DejaVu Sans Mono:pixelsize=12:antialias=true:autohint=false";
  static int borderpx = 2;
  static char shell[] = "/bin/sh";
- 
-@@ -59,7 +59,7 @@ static const char *colorname[] = {
+ static char *utmp = NULL;
+@@ -69,7 +69,7 @@ static const char *colorname[] = {
  	"blue2",
  	"magenta3",
  	"cyan3",
@@ -19,29 +19,3 @@ $OpenBSD: patch-config_def_h,v 1.6 2014/06/10 07:14:50 bcallah Exp $
  
  	/* 8 bright colors */
  	"gray50",
-@@ -71,10 +71,13 @@ static const char *colorname[] = {
- 	"cyan",
- 	"white",
- 
-+	"gray10", /* custom color */
-+
- 	[255] = 0,
- 
- 	/* more colors can be added after 255 to use with DefaultXX */
--	"#cccccc",
-+	"SteelBlue3",
-+	"WhiteSmoke",
- };
- 
- 
-@@ -82,8 +85,8 @@ static const char *colorname[] = {
-  * Default colors (colorname index)
-  * foreground, background, cursor
-  */
--static unsigned int defaultfg = 7;
--static unsigned int defaultbg = 0;
-+static unsigned int defaultfg = 0;
-+static unsigned int defaultbg = 257;
- static unsigned int defaultcs = 256;
- 
- /*

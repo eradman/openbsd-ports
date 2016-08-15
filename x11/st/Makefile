@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.10 2014/06/10 07:14:50 bcallah Exp $
+# $OpenBSD: Makefile,v 1.12 2015/07/24 15:39:23 czarkoff Exp $
 
 COMMENT=		simple X terminal
 
-DISTNAME=		st-0.5
+DISTNAME=		st-0.6
+REVISION=		0
 
 CATEGORIES=		x11
 
@@ -13,11 +14,9 @@ MAINTAINER=		Joerg Jung <jung@openbsd.org>
 # MIT/X Consortium License
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c util X11 Xext Xft fontconfig freetype z
+WANTLIB=		c m util X11 Xext Xft fontconfig freetype z
 
 MASTER_SITES=		http://dl.suckless.org/st/
-
-RUN_DEPENDS=		fonts/liberation-fonts
 
 MAKE_ENV=		LDFLAGS="${LDFLAGS}"
 FAKE_FLAGS=		DESTDIR=""
