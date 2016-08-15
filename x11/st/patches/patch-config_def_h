@@ -6,7 +6,7 @@ $OpenBSD: patch-config_def_h,v 1.7 2015/07/09 22:07:23 czarkoff Exp $
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
   */
 -static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
-+static char font[] = "DejaVu Sans Mono:pixelsize=13:antialias=true:autohint=false";
++static char font[] = "DejaVu Sans Mono:book:pixelsize=12:antialias=true:autohint=false";
  static int borderpx = 2;
  static char shell[] = "/bin/sh";
  static char *utmp = NULL;
