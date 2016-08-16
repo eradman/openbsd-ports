@@ -1,4 +1,5 @@
 # $OpenBSD: Makefile,v 1.12 2015/07/24 15:39:23 czarkoff Exp $
+# Customizations: solarized colors + s/bold/normal fonts
 
 COMMENT=		simple X terminal
 

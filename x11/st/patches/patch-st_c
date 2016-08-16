@@ -1,6 +1,15 @@
 $OpenBSD: patch-st_c,v 1.1 2015/07/24 15:39:23 czarkoff Exp $
---- st.c.orig	Fri Jul 24 13:33:47 2015
-+++ st.c	Fri Jul 24 13:34:30 2015
+--- st.c.orig	Tue Jul  7 16:26:44 2015
++++ st.c	Tue Aug 16 03:47:15 2016
+@@ -3120,7 +3120,7 @@ xloadfonts(char *fontstr, double fontsize) {
+ 		die("st: can't open font %s\n", fontstr);
+ 
+ 	FcPatternDel(pattern, FC_WEIGHT);
+-	FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_BOLD);
++	FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_NORMAL);
+ 	if(xloadfont(&dc.ibfont, pattern))
+ 		die("st: can't open font %s\n", fontstr);
+ 
 @@ -4052,7 +4052,7 @@ main(int argc, char *argv[]) {
  	case 'l':
  		opt_line = EARGF(usage());
