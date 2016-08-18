@@ -1,0 +1,41 @@
+$OpenBSD: patch-config_mk,v 1.7 2015/04/16 19:00:09 jung Exp $
+--- config.mk.orig	Wed Apr 15 21:51:53 2015
++++ config.mk	Wed Apr 15 21:55:01 2015
+@@ -4,27 +4,26 @@ VERSION = 1.2
+ # Customize below to fit your system
+ 
+ # paths
+-PREFIX = /usr/local
++#PREFIX = /usr/local
+ 
+-X11INC = /usr/X11R6/include
+-X11LIB = /usr/X11R6/lib
++X11INC = ${X11BASE}/include
++X11LIB = ${X11BASE}/lib
+ 
+ # includes and libs
+-INCS = -I. -I/usr/include -I${X11INC}
+-LIBS = -L/usr/lib -lc -lcrypt -L${X11LIB} -lX11 -lXext
++INCS = -I${X11INC}
++LIBS = -L${X11LIB} -lX11 -lXext
+ 
+ # flags
+-CPPFLAGS = -DVERSION=\"${VERSION}\" -DHAVE_SHADOW_H
+-CFLAGS = -std=c99 -pedantic -Wall -Os ${INCS} ${CPPFLAGS}
+-LDFLAGS = -s ${LIBS}
++CFLAGS += -std=c99 -pedantic -Wall ${INCS} -DVERSION=\"${VERSION}\" -DHAVE_BSD_AUTH
++LDFLAGS += ${LIBS}
+ 
+ # On *BSD remove -DHAVE_SHADOW_H from CPPFLAGS and add -DHAVE_BSD_AUTH
+ # On OpenBSD and Darwin remove -lcrypt from LIBS
+ 
+ # compiler and linker
+-CC = cc
++CC ?= cc
+ 
+ # Install mode. On BSD systems MODE=2755 and GROUP=auth
+ # On others MODE=4755 and GROUP=root
+-#MODE=2755
+-#GROUP=auth
++MODE=2755
++GROUP=auth
