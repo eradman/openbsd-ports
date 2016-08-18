@@ -13,7 +13,9 @@ MAINTAINER=		Gleydson Soares <gsoares@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		X11 c Xext
+WANTLIB=		X11 c Xext Imlib2
+
+LIB_DEPENDS=		graphics/imlib2
 
 MASTER_SITES=		http://dl.suckless.org/tools/
 
