@@ -19,6 +19,9 @@ WANTLIB=		c m util X11 Xext Xft fontconfig freetype z
 
 MASTER_SITES=		http://dl.suckless.org/st/
 
+RUN_DEPENDS=		fonts/liberation-fonts \ \ \ \
+			fonts/hermit-font
+
 MAKE_ENV=		LDFLAGS="${LDFLAGS}"
 FAKE_FLAGS=		DESTDIR=""
 
