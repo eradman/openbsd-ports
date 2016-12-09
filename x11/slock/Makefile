@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.12 2015/04/16 19:00:08 jung Exp $
+# $OpenBSD: Makefile,v 1.15 2016/08/13 14:00:00 tb Exp $
 
 COMMENT=		simple X screen locker
 
-DISTNAME=		slock-1.2
+DISTNAME=		slock-1.3
+REVISION=		1
 
 CATEGORIES=		x11
 
@@ -13,7 +14,7 @@ MAINTAINER=		Gleydson Soares <gsoares@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		X11 c Xext Imlib2
+WANTLIB=		X11 c Xext Xrandr Imlib2
 
 LIB_DEPENDS=		graphics/imlib2
 
