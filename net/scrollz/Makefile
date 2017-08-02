@@ -2,11 +2,11 @@
 
 COMMENT =	ScrollZ IRC client
 
-VERSION =	2.2.3
+VERSION =	2.3
 DISTNAME =	ScrollZ-${VERSION}
 PKGNAME =	scrollz-${VERSION}
 CATEGORIES =	net
-MASTER_SITES =	http://www.scrollz.com/download/ \
+MASTER_SITES =	http://www.scrollz.info/download/ \
 		https://github.com/ScrollZ/ScrollZ/archive/
 
 HOMEPAGE =	http://www.scrollz.com/

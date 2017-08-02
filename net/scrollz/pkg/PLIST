@@ -1,9 +1,7 @@
 @comment $OpenBSD$
 bin/scrollz
 @bin bin/${FULLPKGNAME}
-share/man/
-share/man/man1/
-@man share/man/man1/scrollz.1
+man/scrollz.1
 share/scrollz/
 share/scrollz/doc/
 share/scrollz/doc/ScrollZ.doc
@@ -531,6 +529,7 @@ share/scrollz/help/set/indent
 share/scrollz/help/set/input_aliases
 share/scrollz/help/set/input_encoding
 share/scrollz/help/set/input_prompt
+share/scrollz/help/set/input_prompt_shift_new
 share/scrollz/help/set/input_protection
 share/scrollz/help/set/insert_mode
 share/scrollz/help/set/inverse_video
@@ -581,6 +580,9 @@ share/scrollz/help/set/show_end_of_msgs
 share/scrollz/help/set/show_numerics
 share/scrollz/help/set/show_status_all
 share/scrollz/help/set/show_who_hopcount
+share/scrollz/help/set/ssl_ca_file
+share/scrollz/help/set/ssl_priority_string
+share/scrollz/help/set/ssl_verify_certificate
 share/scrollz/help/set/stamp_format
 share/scrollz/help/set/status_away
 share/scrollz/help/set/status_channel
@@ -616,6 +618,7 @@ share/scrollz/help/set/tab_max
 share/scrollz/help/set/trace
 share/scrollz/help/set/truncate_public_channel
 share/scrollz/help/set/underline_video
+share/scrollz/help/set/url_buffer_size
 share/scrollz/help/set/user_information
 share/scrollz/help/set/user_wallops
 share/scrollz/help/set/username
