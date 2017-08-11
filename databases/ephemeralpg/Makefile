@@ -12,7 +12,8 @@ MAINTAINER =	Eric Radman <ericshane@eradman.com>
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =	https://bitbucket.org/eradman/ephemeralpg/get/
+MASTER_SITES =	http://ephemeralpg.org/code/ \
+		https://bitbucket.org/eradman/ephemeralpg/get/
 
 WRKDIST =	${WRKDIR}/eradman-ephemeralpg-${REV}
 FAKE_FLAGS =	DESTDIR=""
