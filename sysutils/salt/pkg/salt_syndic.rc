@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# $OpenBSD: salt_syndic.rc,v 1.2 2014/06/17 12:30:39 ajacoutot Exp $
+
+daemon="${TRUEPREFIX}/bin/salt-syndic -d"
+daemon_flags="-u _salt"
+
+. /etc/rc.d/rc.subr
+
+pexp="${MODPY_BIN} ${daemon}${daemon_flags:+ ${daemon_flags}}"
+rc_reload=NO
+
+rc_cmd $1
