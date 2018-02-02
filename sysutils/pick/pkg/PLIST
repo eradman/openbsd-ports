@@ -1,3 +1,0 @@
-@comment $OpenBSD$
-@bin bin/pick
-@man man/man1/pick.1

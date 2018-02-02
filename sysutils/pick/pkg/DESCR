@@ -1,4 +1,0 @@
-The pick(1) utility allows users to choose one option from a set of
-choices using an interface with fuzzy search functionality. It reads a
-list of choices on stdin and outputs the selected choice to stdout;
-therefore it is easily used in pipelines, subshells, and vim.
