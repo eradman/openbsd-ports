@@ -1,22 +1,27 @@
-= Ports for OpenBSD 6.2
+Ports for OpenBSD 6.2
+=====================
 
-== Projects from bitbucket.org/eradman
+Projects from bitbucket.org/eradman
+-----------------------------------
 
 * sysutils/entr
 * sysutils/treedelta
 * sysutils/flattenjs
 * databases/ephemeralpg
 
-== x11/st (patched)
+x11/st (patched)
+------
 
 * Solarized color scheme
 * Render _bold_ fonts with the weight _normal_
 
-== x11/lock (patched)
+x11/lock (patched)
+--------
 
 * Dispay an PNG image instead of a blank screen
 
-== Backports from OpenBSD-current
+Backports from OpenBSD-current
+------------------------------
 
 * databases/postgesql (10.1)
 * databases/postgresql-previous (9.6.5)
