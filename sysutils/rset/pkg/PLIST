@@ -1,0 +1,5 @@
+@comment $OpenBSD: $
+bin/rinstall
+@bin bin/rset
+@man man/man1/rset.1
+@man man/man5/pln.5
