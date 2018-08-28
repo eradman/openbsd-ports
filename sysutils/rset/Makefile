@@ -2,8 +2,8 @@
 
 COMMENT =	configure systems using labeled scripts
 
-DISTNAME =	rset-0.4
-REV =		95ce1b18fcb9
+DISTNAME =	rset-0.5
+REV =		032e76ee9d9c
 
 CATEGORIES =	sysutils
 
@@ -14,8 +14,7 @@ MAINTAINER =	Eric Radman <ericshane@eradman.com>
 # ISC
 PERMIT_PACKAGE_CDROM = Yes
 
-WANTLIB +=	c l
-LDFLAGS +=	'-ll'
+WANTLIB +=	c
 
 RUN_DEPENDS = www/darkhttpd
 TEST_DEPENDS = lang/ruby/2.5
@@ -28,6 +27,7 @@ MAKE_FLAGS =	CC="${CC}" LDFLAGS="${LDFLAGS}"
 WRKDIST =	${WRKDIR}/eradman-rset-${REV}
 FAKE_FLAGS =	DESTDIR=""
 
+TEST_ENV =	PATH="/usr/local/sbin:${PATH}"
 TEST_TARGET =	test
 
 .include <bsd.port.mk>
