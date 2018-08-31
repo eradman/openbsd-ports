@@ -2,8 +2,8 @@
 
 COMMENT =	configure systems using labeled scripts
 
-DISTNAME =	rset-0.5
-REV =		032e76ee9d9c
+DISTNAME =	rset-0.6
+REV =		df0f584f20ed
 
 CATEGORIES =	sysutils
 
