@@ -1,16 +1,8 @@
-$OpenBSD: patch-config_def_h,v 1.7 2015/07/09 22:07:23 czarkoff Exp $
---- config.def.h.orig	Thu Aug 11 10:25:58 2016
-+++ config.def.h	Fri Dec  9 12:11:30 2016
-@@ -5,7 +5,7 @@
-  *
-  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
-  */
--static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-+static char font[] = "DejaVu Sans Mono:book:pixelsize=12:antialias=true:autohint=true";
- static int borderpx = 2;
- 
- /*
-@@ -85,30 +85,31 @@ static unsigned int tabspaces = 8;
+$OpenBSD: patch-config_def_h,v 1.9 2018/03/17 13:28:39 kn Exp $
+Index: config.def.h
+--- config.def.h.orig
++++ config.def.h
+@@ -85,30 +85,31 @@ unsigned int tabspaces = 8;
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
  	/* 8 normal colors */
@@ -22,14 +14,14 @@ $OpenBSD: patch-config_def_h,v 1.7 2015/07/09 22:07:23 czarkoff Exp $
 -	"magenta3",
 -	"cyan3",
 -	"gray90",
-+        "#073642",
-+        "#dc322f",
-+        "#859900",
-+        "#b58900",
-+        "#268bd2",
-+        "#d33682",
-+        "#2aa198",
-+        "#eee8d5",
++	"#073642",
++	"#dc322f",
++	"#859900",
++	"#b58900",
++	"#268bd2",
++	"#d33682",
++	"#2aa198",
++	"#eee8d5",
  
  	/* 8 bright colors */
 -	"gray50",
@@ -40,14 +32,14 @@ $OpenBSD: patch-config_def_h,v 1.7 2015/07/09 22:07:23 czarkoff Exp $
 -	"magenta",
 -	"cyan",
 -	"white",
-+        "#002b36",
-+        "#cb4b16",
-+        "#586e75",
-+        "#657b83",
-+        "#839496",
-+        "#6c71c4",
-+        "#93a1a1",
-+        "#fdf6e3",
++	"#002b36",
++	"#cb4b16",
++	"#586e75",
++	"#657b83",
++	"#839496",
++	"#6c71c4",
++	"#93a1a1",
++	"#fdf6e3",
  
  	[255] = 0,
  
@@ -63,11 +55,11 @@ $OpenBSD: patch-config_def_h,v 1.7 2015/07/09 22:07:23 czarkoff Exp $
   * Default colors (colorname index)
   * foreground, background, cursor, reverse cursor
   */
--static unsigned int defaultfg = 7;
--static unsigned int defaultbg = 0;
+-unsigned int defaultfg = 7;
+-unsigned int defaultbg = 0;
 -static unsigned int defaultcs = 256;
-+static unsigned int defaultfg = 258;
-+static unsigned int defaultbg = 257;
++unsigned int defaultfg = 248;
++unsigned int defaultbg = 257;
 +static unsigned int defaultcs = 258;
  static unsigned int defaultrcs = 257;
  

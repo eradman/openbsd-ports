@@ -1,5 +1,4 @@
-/patch-Makefile/1.4/Thu Jul  9 22:07:23 2015//TOPENBSD_5_9_BASE
-/patch-config_def_h/1.7/Thu Jul  9 22:07:23 2015//TOPENBSD_5_9_BASE
-/patch-config_mk/1.7/Thu Jul  9 22:07:23 2015//TOPENBSD_5_9_BASE
-/patch-st_c/1.1/Fri Jul 24 15:39:23 2015//TOPENBSD_5_9_BASE
+/patch-config_def_h/1.9/Sat Mar 17 13:28:39 2018//
+/patch-config_mk/1.10/Sat Mar 17 13:28:39 2018//
+/patch-st_c/1.6/Thu Mar 29 21:09:09 2018//
 D
