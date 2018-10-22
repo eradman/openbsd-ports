@@ -1,0 +1,13 @@
+$OpenBSD: patch-config_def_h,v 1.9 2018/03/17 13:28:39 kn Exp $
+Index: config.def.h
+--- config.def.h.orig
++++ config.def.h
+@@ -92,7 +92,7 @@ static const char *colorname[] = {
+ 	"blue2",
+ 	"magenta3",
+ 	"cyan3",
+-	"gray90",
++	"gray",
+ 
+ 	/* 8 bright colors */
+ 	"gray50",
