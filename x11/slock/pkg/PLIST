@@ -1,7 +1,0 @@
-@comment $OpenBSD: PLIST,v 1.4 2016/03/05 19:17:01 jung Exp $
-@mode g+s
-@group auth
-@bin bin/slock
-@mode
-@group
-@man man/man1/slock.1
