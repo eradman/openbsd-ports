@@ -1,10 +1,11 @@
-# $OpenBSD: Makefile,v 1.4 2017/11/30 16:21:25 jeremy Exp $
+# $OpenBSD: Makefile,v 1.6 2018/09/06 19:10:53 tb Exp $
 
 COMMENT=	PostgreSQL RDBMS (previous version, for pg_upgrade)
 
 VERSION=	9.6.6
 DISTNAME=	postgresql-${VERSION}
 PKGNAME=	postgresql-previous-${VERSION}
+REVISION=	0
 
 CATEGORIES=	databases
 SHARED_LIBS=	ecpg		7.8 \
@@ -30,12 +31,9 @@ USE_GMAKE=	Yes
 
 CONFIGURE_STYLE=gnu
 
-MODULES=	lang/python gcc4
+MODULES=	lang/python
 MODPY_RUNDEP=	No
 POSTGRESQL_DIR=	postgresql-${VERSION:C/.[0-9]+$//}
-
-# for __sync_lock_test_and_set                   
-MODGCC4_ARCHS= arm                         
 
 CONFIGURE_ENV=	ac_cv_path_PYTHON=${MODPY_BIN} \
 		CPPFLAGS="-I${LOCALBASE}/include" \
