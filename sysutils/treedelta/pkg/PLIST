@@ -1,3 +1,0 @@
-@comment $OpenBSD: $
-bin/td
-@man man/man1/td.1

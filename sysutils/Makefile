@@ -1,6 +1,5 @@
      SUBDIR =
      SUBDIR += entr
-     SUBDIR += treedelta
      SUBDIR += flattenjs
      SUBDIR += rset
 
