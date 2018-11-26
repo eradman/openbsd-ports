@@ -7,7 +7,7 @@ REV =		f4e2cbe57708
 
 CATEGORIES =	sysutils
 
-HOMEPAGE =	http://entrproject.org/
+HOMEPAGE =	http://eradman.com/entrproject/
 
 MAINTAINER =	Eric Radman <ericshane@eradman.com>
 
@@ -16,7 +16,7 @@ PERMIT_PACKAGE_CDROM = Yes
 
 WANTLIB += c
 
-MASTER_SITES =	http://entrproject.org/code/ \
+MASTER_SITES =	http://eradman.com/entrproject/code/ \
 		https://bitbucket.org/eradman/entr/get/
 
 MAKE_FILE =	Makefile.bsd
