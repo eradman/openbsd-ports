@@ -2,8 +2,8 @@
 
 COMMENT =	print json in an line-oriented format
 
-DISTNAME =	flattenjs-1.0
-REV =		b28ad1c1d6d6
+DISTNAME =	flattenjs-1.1
+REV =		ac216a73e623
 
 CATEGORIES =	sysutils
 HOMEPAGE =	https://bitbucket.org/eradman/flattenjs
@@ -16,8 +16,6 @@ MASTER_SITES =	https://bitbucket.org/eradman/flattenjs/get/
 
 WRKDIST =	${WRKDIR}/eradman-flattenjs-${REV}
 FAKE_FLAGS =	DESTDIR=""
-
-RUN_DEPENDS =	lang/node
 
 TEST_TARGET =	test
 
