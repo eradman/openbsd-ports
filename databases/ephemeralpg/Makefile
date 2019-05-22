@@ -2,8 +2,8 @@
 
 COMMENT =	quickly spin up a temporary PostgreSQL test database
 
-DISTNAME =	ephemeralpg-2.6
-REV =		a64dcc8705fc
+DISTNAME =	ephemeralpg-2.7
+REV =		78ebe1b330b3
 
 CATEGORIES =	databases
 HOMEPAGE =	http://eradman.com/ephemeralpg/
