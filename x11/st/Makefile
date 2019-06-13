@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.17 2018/03/29 21:09:09 kn Exp $
+# $OpenBSD: Makefile,v 1.19 2019/02/10 21:55:24 feinerer Exp $
 
 COMMENT=		simple X terminal
 
-V=			0.8.1
+V=			0.8.2
 DISTNAME=		st-${V}
 
 CATEGORIES=		x11
