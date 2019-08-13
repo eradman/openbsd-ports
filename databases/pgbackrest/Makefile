@@ -1,0 +1,27 @@
+# $OpenBSD: $
+
+COMMENT =	reliable postgresql backup & restore
+
+V =		2.16
+DISTNAME =	pgbackrest-${V}
+
+CATEGORIES =	databases
+HOMEPAGE =	https://pgbackrest.org/
+MAINTAINER =	Eric Radman <ericshane@eradman.com>
+
+# MIT
+PERMIT_PACKAGE_CDROM =	Yes
+
+DISTFILES =	${V}.tar.gz
+MASTER_SITES =	https://github.com/pgbackrest/pgbackrest/archive/release/
+
+CONFIGURE_STYLE =  gnu
+ALL_TARGET =
+
+WRKDIST =	${WRKDIR}/pgbackrest-release-${V}
+WRKSRC =	${WRKDIST}/src
+
+RUN_DEPENDS =		postgresql-server->=11,<12:databases/postgresql,-server
+BUILD_DEPENDS =		${RUN_DEPENDS} postgresql-client->=11,<12:databases/postgresql,-main
+
+.include <bsd.port.mk>

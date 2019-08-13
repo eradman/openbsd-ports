@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: src/configure
+--- src/configure.orig
++++ src/configure
+@@ -2768,7 +2768,7 @@ fi
+ 
+ 
+ # Enable internal test code and assertions by undefining NDEBUG
+-warning='-Wall -Wextra -Wno-clobbered -Wno-missing-field-initializers'
++warning='-Wall -Wextra -Wno-missing-field-initializers'
+ 
+ # Check whether --enable-test was given.
+ if test "${enable_test+set}" = set; then :

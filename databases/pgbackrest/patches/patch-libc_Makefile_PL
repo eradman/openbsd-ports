@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: libc/Makefile.PL
+--- libc/Makefile.PL.orig
++++ libc/Makefile.PL
+@@ -127,7 +127,7 @@ WriteMakefile
+     AUTHOR => 'David Steele <david@pgbackrest.org>',
+ 
+     CCFLAGS => join(' ', qw)
+-        -Wfatal-errors -Wall -Wextra -Wwrite-strings -Wno-clobbered -Wno-missing-field-initializers
++        -Wfatal-errors -Wall -Wextra -Wwrite-strings -Wno-missing-field-initializers
+         -o $@
+         -std=c99
+         -D_POSIX_C_SOURCE=200112L
