@@ -18,6 +18,8 @@ MASTER_SITES =	https://github.com/pgbackrest/pgbackrest/archive/release/
 CONFIGURE_STYLE =  gnu
 ALL_TARGET =
 
+WANTLIB += c crypto m perl pq ssl xml2 z
+
 WRKDIST =	${WRKDIR}/pgbackrest-release-${V}
 WRKSRC =	${WRKDIST}/src
 
