@@ -2,8 +2,8 @@
 
 COMMENT =	run arbitrary commands when files change
 
-DISTNAME =	entr-4.2
-REV =		6cd0927b54a6
+V =	4.3
+DISTNAME =	entr-${V}
 
 CATEGORIES =	sysutils
 
@@ -17,11 +17,10 @@ PERMIT_PACKAGE_CDROM = Yes
 WANTLIB += c
 
 MASTER_SITES =	http://eradman.com/entrproject/code/ \
-		https://bitbucket.org/eradman/entr/get/
+		https://github.com/eradman/entr/archive/${V}/
 
 MAKE_FILE =	Makefile.bsd
 MAKE_FLAGS =	CC="${CC}" LDFLAGS="${LDFLAGS}"
-WRKDIST =	${WRKDIR}/eradman-entr-${REV}
 FAKE_FLAGS =	DESTDIR=""
 
 TEST_TARGET =	test

@@ -1,8 +1,8 @@
 Ports for OpenBSD 6.5
 =====================
 
-Projects from bitbucket.org/eradman
------------------------------------
+Projects from github.com/eradman
+--------------------------------
 
 * databases/ephemeralpg
 * sysutils/entr

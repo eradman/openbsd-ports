@@ -2,8 +2,8 @@
 
 COMMENT =	configure systems using labeled scripts
 
-DISTNAME =	rset-1.0
-REV =	ac19d68ca846
+V =	1.1
+DISTNAME =	rset-${V}
 
 CATEGORIES =	sysutils
 
@@ -17,14 +17,13 @@ PERMIT_PACKAGE_CDROM = Yes
 WANTLIB +=	c
 
 RUN_DEPENDS = www/darkhttpd
-TEST_DEPENDS = lang/ruby/2.5
+TEST_DEPENDS = lang/ruby/2.6
 
 MASTER_SITES =	http://scriptedconfiguration.org/code/ \
-		https://bitbucket.org/eradman/rset/get/
+		https://github.com/eradman/rset/archive/${V}/
 
 MAKE_FILE =	Makefile.bsd
 MAKE_FLAGS =	CC="${CC}" LDFLAGS="${LDFLAGS}"
-WRKDIST =	${WRKDIR}/eradman-rset-${REV}
 FAKE_FLAGS =	DESTDIR=""
 
 TEST_ENV =	PATH="/usr/local/sbin:${PATH}"

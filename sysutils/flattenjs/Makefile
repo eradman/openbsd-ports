@@ -2,19 +2,19 @@
 
 COMMENT =	print json in an line-oriented format
 
-DISTNAME =	flattenjs-1.1
-REV =		ac216a73e623
+V =	1.2
+DISTNAME =	flattenjs-${V}
 
 CATEGORIES =	sysutils
-HOMEPAGE =	https://bitbucket.org/eradman/flattenjs
+HOMEPAGE =	https://github.com/eradman/flattenjs
 MAINTAINER =	Eric Radman <ericshane@eradman.com>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =	https://bitbucket.org/eradman/flattenjs/get/
+MASTER_SITES =	http://eradman.com/ephemeralpg/code/ \
+		https://github.com/eradman/flattenjs/archive/${V}/
 
-WRKDIST =	${WRKDIR}/eradman-flattenjs-${REV}
 FAKE_FLAGS =	DESTDIR=""
 
 TEST_TARGET =	test
