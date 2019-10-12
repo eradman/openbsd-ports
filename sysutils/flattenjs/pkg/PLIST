@@ -1,3 +1,0 @@
-@comment $OpenBSD: PLIST,v$
-bin/flattenjs
-@man man/man1/flattenjs.1
