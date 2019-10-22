@@ -10,7 +10,7 @@ HOMEPAGE =	http://eradman.com/ephemeralpg/
 MAINTAINER =	Eric Radman <ericshane@eradman.com>
 
 # ISC
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =	http://eradman.com/ephemeralpg/code/ \
 		https://github.com/eradman/ephemeralpg/archive/${V}/

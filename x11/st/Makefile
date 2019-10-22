@@ -12,7 +12,7 @@ HOMEPAGE=		https://st.suckless.org/
 MAINTAINER=		Joerg Jung <jung@openbsd.org>
 
 # MIT/X Consortium License
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE=	Yes
 
 # uses pledge()
 WANTLIB=		X11 Xft c fontconfig freetype m util z

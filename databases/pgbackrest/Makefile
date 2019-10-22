@@ -10,7 +10,7 @@ HOMEPAGE =	https://pgbackrest.org/
 MAINTAINER =	Eric Radman <ericshane@eradman.com>
 
 # MIT
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 DISTFILES =	${V}.tar.gz
 MASTER_SITES =	https://github.com/pgbackrest/pgbackrest/archive/release/

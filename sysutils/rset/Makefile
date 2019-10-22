@@ -12,7 +12,7 @@ HOMEPAGE =	http://scriptedconfiguration.org/
 MAINTAINER =	Eric Radman <ericshane@eradman.com>
 
 # ISC
-PERMIT_PACKAGE_CDROM = Yes
+PERMIT_PACKAGE = Yes
 
 WANTLIB +=	c
 
