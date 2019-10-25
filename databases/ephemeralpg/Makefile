@@ -13,9 +13,10 @@ MAINTAINER =	Eric Radman <ericshane@eradman.com>
 PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =	http://eradman.com/ephemeralpg/code/ \
-		https://github.com/eradman/ephemeralpg/archive/${V}/
+		https://github.com/eradman/ephemeralpg/archive/${V}/ \
+		https://gitlab.com/eradman/ephemeralpg/-/archive/${V}/
 
-FAKE_FLAGS =	DESTDIR=""
+TEST_DEPENDS =	databases/postgresql,-server
 
 TEST_TARGET =	selftest
 

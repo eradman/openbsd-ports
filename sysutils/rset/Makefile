@@ -20,7 +20,8 @@ RUN_DEPENDS = www/darkhttpd
 TEST_DEPENDS = lang/ruby/2.6
 
 MASTER_SITES =	http://scriptedconfiguration.org/code/ \
-		https://github.com/eradman/rset/archive/${V}/
+		https://github.com/eradman/rset/archive/${V}/ \
+		https://gitlab.com/eradman/rset/-/archive/${V}
 
 MAKE_FILE =	Makefile.bsd
 MAKE_FLAGS =	CC="${CC}" LDFLAGS="${LDFLAGS}"

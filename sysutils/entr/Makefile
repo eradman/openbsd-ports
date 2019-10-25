@@ -17,7 +17,8 @@ PERMIT_PACKAGE = Yes
 WANTLIB += c
 
 MASTER_SITES =	http://eradman.com/entrproject/code/ \
-		https://github.com/eradman/entr/archive/${V}/
+		https://github.com/eradman/entr/archive/${V}/ \
+		https://gitlab.com/eradman/entr/-/archive/${V}/
 
 MAKE_FILE =	Makefile.bsd
 MAKE_FLAGS =	CC="${CC}" LDFLAGS="${LDFLAGS}"
