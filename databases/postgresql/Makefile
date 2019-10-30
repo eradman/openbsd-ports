@@ -7,9 +7,8 @@ COMMENT-contrib=PostgreSQL RDBMS contributions
 COMMENT-plpython=Python procedural language for PostgreSQL
 COMMENT-pg_upgrade=Support for upgrading PostgreSQL data from previous version
 
-VERSION=	11.5
-PREV_MAJOR=	10
-REVISION-server=0
+VERSION=	12.0
+PREV_MAJOR=	11
 DISTNAME=	postgresql-${VERSION}
 PKGNAME-main=	postgresql-client-${VERSION}
 PKGNAME-server=	postgresql-server-${VERSION}
@@ -20,10 +19,10 @@ PKGNAME-pg_upgrade=postgresql-pg_upgrade-${VERSION}
 
 
 CATEGORIES=	databases
-SHARED_LIBS=	ecpg		7.9 \
-		ecpg_compat	4.9 \
-		pgtypes		4.8 \
-		pq		6.10
+SHARED_LIBS=	ecpg		7.10 \
+		ecpg_compat	4.10 \
+		pgtypes		4.9 \
+		pq		6.11
 
 HOMEPAGE=	http://www.postgresql.org/
 
