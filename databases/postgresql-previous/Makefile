@@ -2,10 +2,10 @@
 
 COMMENT=	PostgreSQL RDBMS (previous version, for pg_upgrade)
 
-VERSION=	11.5
+VERSION=	11.6
 DISTNAME=	postgresql-${VERSION}
 PKGNAME=	postgresql-previous-${VERSION}
-REVISION=	1
+REVISION=	2
 
 CATEGORIES=	databases
 SHARED_LIBS=	ecpg		7.9 \
