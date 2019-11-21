@@ -2,7 +2,7 @@
 
 COMMENT =	reliable postgresql backup & restore
 
-V =		2.18
+V =		2.19
 DISTNAME =	pgbackrest-${V}
 
 CATEGORIES =	databases
@@ -23,7 +23,7 @@ WANTLIB += c crypto m perl pq ssl xml2 z
 WRKDIST =	${WRKDIR}/pgbackrest-release-${V}
 WRKSRC =	${WRKDIST}/src
 
-RUN_DEPENDS =		postgresql-server->=11,<12:databases/postgresql,-server
-BUILD_DEPENDS =		${RUN_DEPENDS} postgresql-client->=11,<12:databases/postgresql,-main
+RUN_DEPENDS =		postgresql-server->=11<13:databases/postgresql,-server
+BUILD_DEPENDS =		${RUN_DEPENDS} postgresql-client->=11,<13:databases/postgresql,-main
 
 .include <bsd.port.mk>
