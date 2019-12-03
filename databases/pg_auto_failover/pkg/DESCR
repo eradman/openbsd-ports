@@ -1,0 +1,11 @@
+pg_auto_failover is an extension and service for PostgreSQL that
+monitors and manages automated failover for a Postgres cluster. It
+is optimized for simplicity and correctness and supports Postgres
+10 and newer.
+
+We set up one PostgreSQL server as a monitor node as well as a
+primary and secondary node for storing data. The monitor node tracks
+the health of the data nodes and implements a failover state machine.
+On the PostgreSQL nodes, the pg_autoctl program runs alongside
+PostgreSQL and runs the necessary commands to configure synchronous
+streaming replication.
