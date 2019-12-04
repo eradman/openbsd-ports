@@ -17,6 +17,9 @@ MASTER_SITES =	http://eradman.com/ephemeralpg/code/ \
 
 TEST_DEPENDS =	databases/postgresql,-server
 
+MAKE_FLAGS =	CC="${CC}" LDFLAGS="${LDFLAGS}"
+FAKE_FLAGS =	DESTDIR=""
+
 TEST_TARGET =	selftest
 
 .include <bsd.port.mk>
