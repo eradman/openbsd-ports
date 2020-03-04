@@ -3,7 +3,7 @@ $OpenBSD$
 Index: src/configure
 --- src/configure.orig
 +++ src/configure
-@@ -2768,7 +2768,7 @@ fi
+@@ -3010,7 +3010,7 @@ fi
  
  
  # Enable internal test code and assertions by undefining NDEBUG

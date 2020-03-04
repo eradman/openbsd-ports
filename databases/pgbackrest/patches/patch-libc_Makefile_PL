@@ -3,7 +3,7 @@ $OpenBSD$
 Index: libc/Makefile.PL
 --- libc/Makefile.PL.orig
 +++ libc/Makefile.PL
-@@ -128,7 +128,7 @@ WriteMakefile
+@@ -126,7 +126,7 @@ WriteMakefile
      AUTHOR => 'David Steele <david@pgbackrest.org>',
  
      CCFLAGS => join(' ', qw)

@@ -2,7 +2,7 @@
 
 COMMENT =	reliable postgresql backup & restore
 
-V =		2.19
+V =		2.24
 DISTNAME =	pgbackrest-${V}
 
 CATEGORIES =	databases
@@ -16,6 +16,7 @@ DISTFILES =	${V}.tar.gz
 MASTER_SITES =	https://github.com/pgbackrest/pgbackrest/archive/release/
 
 CONFIGURE_STYLE =  gnu
+CONFIGURE_ENV = LDFLAGS="-L/usr/local/lib" LIBS="-L/usr/local/lib"
 ALL_TARGET =
 
 WANTLIB += c crypto m perl pq ssl xml2 z
