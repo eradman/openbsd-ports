@@ -1,5 +1,7 @@
 @comment $OpenBSD: PLIST,v$
+bin/ddl_compare
 @bin bin/getsocket
 bin/pg_tmp
+@man man/man1/ddl_compare.1
 @man man/man1/getsocket.1
 @man man/man1/pg_tmp.1
