@@ -2,7 +2,7 @@
 
 COMMENT =	reliable postgresql backup & restore
 
-V =		2.25
+V =		2.26
 DISTNAME =	pgbackrest-${V}
 
 CATEGORIES =	databases
@@ -27,7 +27,6 @@ WANTLIB += c crypto m perl pq ssl xml2 z
 RUN_DEPENDS =		postgresql-server->=11<13:databases/postgresql,-server
 BUILD_DEPENDS =		${RUN_DEPENDS} postgresql-client->=11,<13:databases/postgresql,-main \
 			devel/gmake
-FAKE_FLAGS =	DESTDIR="${WRKINST}${PREFIX}"
 
 USE_GMAKE = Yes
 
