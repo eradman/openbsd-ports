@@ -1,6 +1,0 @@
-@comment $OpenBSD: PLIST,v$
-@bin bin/pg_autoctl
-lib/postgresql/pgautofailover.so
-share/postgresql/extension/pgautofailover--1.0--dummy.sql
-share/postgresql/extension/pgautofailover--1.0.sql
-share/postgresql/extension/pgautofailover.control
