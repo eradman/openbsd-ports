@@ -17,7 +17,7 @@ PERMIT_PACKAGE = Yes
 WANTLIB +=	c
 
 RUN_DEPENDS = www/darkhttpd
-TEST_DEPENDS = lang/ruby/2.6
+TEST_DEPENDS = lang/ruby/2.7
 
 MASTER_SITES =	http://scriptedconfiguration.org/code/ \
 		https://gitlab.com/eradman/rset/-/archive/${V}/
