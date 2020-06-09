@@ -2,7 +2,7 @@
 
 COMMENT=		simple X terminal
 
-V=			0.8.2
+V=			0.8.3
 DISTNAME=		st-${V}
 
 CATEGORIES=		x11

@@ -5,5 +5,8 @@ share/terminfo/
 share/terminfo/s/
 share/terminfo/s/st
 share/terminfo/s/st-256color
+share/terminfo/s/st-bs
+share/terminfo/s/st-bs-256color
 share/terminfo/s/st-meta
 share/terminfo/s/st-meta-256color
+share/terminfo/s/st-mono

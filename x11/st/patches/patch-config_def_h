@@ -2,7 +2,7 @@ $OpenBSD: patch-config_def_h,v 1.11 2019/02/10 21:55:24 feinerer Exp $
 Index: config.def.h
 --- config.def.h.orig
 +++ config.def.h
-@@ -85,30 +85,31 @@ unsigned int tabspaces = 8;
+@@ -87,30 +87,31 @@ unsigned int tabspaces = 8;
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
  	/* 8 normal colors */
@@ -51,7 +51,7 @@ Index: config.def.h
  };
  
  
-@@ -116,9 +117,9 @@ static const char *colorname[] = {
+@@ -118,9 +119,9 @@ static const char *colorname[] = {
   * Default colors (colorname index)
   * foreground, background, cursor, reverse cursor
   */
