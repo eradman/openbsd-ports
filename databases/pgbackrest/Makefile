@@ -2,7 +2,7 @@
 
 COMMENT =	reliable postgresql backup & restore
 
-V =		2.26
+V =		2.27
 DISTNAME =	pgbackrest-${V}
 
 CATEGORIES =	databases
