@@ -1,0 +1,4 @@
+pg_auto_failover is an extension and service for PostgreSQL that
+monitors and manages automated failover for a Postgres cluster. It
+is optimized for simplicity and correctness and supports Postgres
+10 and newer.
