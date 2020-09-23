@@ -22,7 +22,11 @@ CONFIGURE_STYLE =  gnu
 CONFIGURE_ENV = LDFLAGS="-L/usr/local/lib" LIBS="-L/usr/local/lib"
 ALL_TARGET =
 
-WANTLIB += c crypto m perl pq ssl xml2 z
+WANTLIB += bz2 c crypto lz4 pq ssl xml2 z zstd
+
+LIB_DEPENDS = archivers/bzip2 \
+		  archivers/lz4 \
+		archivers/zstd
 
 RUN_DEPENDS =		postgresql-server->=11<13:databases/postgresql,-server
 BUILD_DEPENDS =		${RUN_DEPENDS} postgresql-client->=11,<13:databases/postgresql,-main \
