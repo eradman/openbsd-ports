@@ -2,7 +2,7 @@
 
 COMMENT =	quickly spin up a temporary PostgreSQL test database
 
-V =	3.0
+V =	3.1
 DISTNAME =	ephemeralpg-${V}
 
 CATEGORIES =	databases
