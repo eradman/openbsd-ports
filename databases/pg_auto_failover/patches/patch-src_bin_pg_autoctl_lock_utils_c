@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: src/bin/pg_autoctl/lock_utils.c
+--- src/bin/pg_autoctl/lock_utils.c.orig
++++ src/bin/pg_autoctl/lock_utils.c
+@@ -26,7 +26,7 @@
+ /*
+  * See man semctl(2)
+  */
+-#if !defined(__APPLE__)
++#if defined(__linux__)
+ union semun
+ {
+ 	int val;
