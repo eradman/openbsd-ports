@@ -2,7 +2,7 @@
 
 COMMENT =	reliable postgresql backup & restore
 
-V =		2.29
+V =		2.31
 DISTNAME =	pgbackrest-${V}
 
 CATEGORIES =	databases
@@ -29,7 +29,7 @@ LIB_DEPENDS = archivers/bzip2 \
 		archivers/zstd
 
 RUN_DEPENDS =		postgresql-server->=11<13:databases/postgresql,-server
-BUILD_DEPENDS =		${RUN_DEPENDS} postgresql-client->=11,<13:databases/postgresql,-main \
+BUILD_DEPENDS =		${RUN_DEPENDS} postgresql-client->=12,<14:databases/postgresql,-main \
 			devel/gmake
 
 USE_GMAKE = Yes

@@ -13,7 +13,7 @@ MAINTAINER =	Eric Radman <ericshane@eradman.com>
 PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =	http://eradman.com/ephemeralpg/code/ \
-		https://gitlab.com/eradman/ephemeralpg/-/archive/${V}/
+		https://github.com/eradman/ephemeralpg/archive/${V}/
 
 TEST_DEPENDS =	databases/postgresql,-server
 
