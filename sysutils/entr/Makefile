@@ -2,7 +2,7 @@
 
 COMMENT =	run arbitrary commands when files change
 
-V =	4.6
+V =	4.7
 DISTNAME =	entr-${V}
 
 CATEGORIES =	sysutils
@@ -17,7 +17,7 @@ PERMIT_PACKAGE = Yes
 WANTLIB += c
 
 MASTER_SITES =	http://eradman.com/entrproject/code/ \
-		https://gitlab.com/eradman/entr/-/archive/${V}/
+		https://github.com/eradman/entr/archive/${V}/
 
 MAKE_FILE =	Makefile.bsd
 MAKE_FLAGS =	CC="${CC}" LDFLAGS="${LDFLAGS}"
