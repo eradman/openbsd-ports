@@ -1,3 +1,5 @@
+# $OpenBSD: $
+
 COMMENT =	expand/collect hostlists
 
 VERSON =	1.20

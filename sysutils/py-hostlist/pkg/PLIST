@@ -7,9 +7,7 @@ bin/pshbak
 lib/python${MODPY_VERSION}/site-packages/hostlist.py
 lib/python${MODPY_VERSION}/site-packages/hostlist.pyc
 lib/python${MODPY_VERSION}/site-packages/python_hostlist-1.20-py${MODPY_VERSION}.egg-info
-@mandir share/man/
-share/man/man1/
-@man share/man/man1/dbuck.1
-@man share/man/man1/hostgrep.1
-@man share/man/man1/hostlist.1
-@man share/man/man1/pshbak.1
+@man man/man1/dbuck.1
+@man man/man1/hostgrep.1
+@man man/man1/hostlist.1
+@man man/man1/pshbak.1
