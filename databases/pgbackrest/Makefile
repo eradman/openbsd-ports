@@ -19,10 +19,9 @@ WRKDIST =	${WRKDIR}/pgbackrest-release-${V}
 WRKSRC =	${WRKDIST}/src
 
 CONFIGURE_STYLE =  gnu
-CONFIGURE_ENV = LDFLAGS="-L/usr/local/lib" LIBS="-L/usr/local/lib"
 ALL_TARGET =
 
-WANTLIB += bz2 c crypto lz4 pq ssl xml2 z zstd
+WANTLIB += bz2 c crypto lz4 ssl z zstd
 
 LIB_DEPENDS = archivers/bzip2 \
 		  archivers/lz4 \
