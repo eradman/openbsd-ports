@@ -16,7 +16,7 @@ PERMIT_PACKAGE = Yes
 
 WANTLIB +=	c
 
-TEST_DEPENDS = lang/ruby/2.7
+TEST_DEPENDS = lang/ruby/3.0
 
 MASTER_SITES =	http://scriptedconfiguration.org/code/ \
 		https://github.com/eradman/rset/archive/${V}/
@@ -25,7 +25,6 @@ MAKE_FILE =	Makefile.bsd
 MAKE_FLAGS =	CC="${CC}" LDFLAGS="${LDFLAGS}"
 FAKE_FLAGS =	DESTDIR=""
 
-TEST_ENV =	PATH="/usr/local/sbin:${PATH}"
 TEST_TARGET =	test
 
 .include <bsd.port.mk>
