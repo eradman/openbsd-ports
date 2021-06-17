@@ -2,7 +2,7 @@
 
 COMMENT =	extension for automating failover
 
-V =		1.5.1
+V =		1.5.2
 DISTNAME =	pg_auto_failover-${V}
 
 CATEGORIES =	databases
@@ -19,8 +19,8 @@ WRKDIST =	${WRKDIR}/pg_auto_failover-${V}
 
 WANTLIB += c crypto curses m pq readline ssl xml2 z
 
-RUN_DEPENDS =	postgresql-server->=11<13:databases/postgresql,-server
-BUILD_DEPENDS =	${RUN_DEPENDS} postgresql-client->=11,<13:databases/postgresql,-main \
+RUN_DEPENDS =	postgresql-server->=12<14:databases/postgresql,-server
+BUILD_DEPENDS =	${RUN_DEPENDS} postgresql-client->=12,<14:databases/postgresql,-main \
 		devel/gmake
 
 USE_GMAKE = Yes
