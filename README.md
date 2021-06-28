@@ -8,10 +8,15 @@ Projects from github.com/eradman
 * sysutils/entr
 * sysutils/rset
 
-x11/st (patched)
-------
+Customized Ports
+----------------
 
-* Solarized color scheme
+* x11/st : solarized color scheme
+
+Patch Overlays
+--------------
+
+* www/chromium : Enable Kerberos, backport fix to policy path
 
 Database
 --------
