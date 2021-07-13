@@ -2,7 +2,7 @@
 
 COMMENT =	extension for automating failover
 
-V =		1.5.2
+V =		1.6.1
 DISTNAME =	pg_auto_failover-${V}
 
 CATEGORIES =	databases
