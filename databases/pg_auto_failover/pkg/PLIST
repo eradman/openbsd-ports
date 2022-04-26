@@ -1,4 +1,3 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/pg_autoctl
 @so lib/postgresql/pgautofailover.so
 share/postgresql/extension/pgautofailover--1.0--1.1.sql

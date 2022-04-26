@@ -19,8 +19,8 @@ WRKDIST =	${WRKDIR}/pg_auto_failover-${V}
 
 WANTLIB += c crypto curses m pq readline ssl xml2 z
 
-RUN_DEPENDS =	postgresql-server->=12<14:databases/postgresql,-server
-BUILD_DEPENDS =	${RUN_DEPENDS} postgresql-client->=12,<14:databases/postgresql,-main \
+RUN_DEPENDS =	postgresql-server->=13<15:databases/postgresql,-server
+BUILD_DEPENDS =	${RUN_DEPENDS} postgresql-client->=13,<15:databases/postgresql,-main \
 		devel/gmake
 
 USE_GMAKE = Yes
