@@ -2,7 +2,7 @@
 
 COMMENT =	configure systems using labeled scripts
 
-V =	2.3
+V =	2.4
 DISTNAME =	rset-${V}
 
 CATEGORIES =	sysutils
@@ -16,7 +16,7 @@ PERMIT_PACKAGE = Yes
 
 WANTLIB +=	c
 
-TEST_DEPENDS = lang/ruby/3.0
+TEST_DEPENDS = lang/ruby/3.1
 
 MASTER_SITES =	http://scriptedconfiguration.org/code/ \
 		https://github.com/eradman/rset/archive/${V}/
