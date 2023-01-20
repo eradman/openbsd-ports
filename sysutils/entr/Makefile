@@ -2,7 +2,7 @@
 
 COMMENT =	run arbitrary commands when files change
 
-V =	5.2
+V =	5.3
 DISTNAME =	entr-${V}
 
 CATEGORIES =	sysutils
