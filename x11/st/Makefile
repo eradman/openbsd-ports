@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.22 2020/06/29 14:36:10 mestre Exp $
-
 COMMENT=		simple X terminal
 
 V=			0.9
 DISTNAME=		st-${V}
+SUPDISTFILES=		st-scrollback-0.8.5.diff:0
+REVISION=		0
 
 CATEGORIES=		x11
 
@@ -15,15 +15,24 @@ MAINTAINER=		Joerg Jung <jung@openbsd.org>
 PERMIT_PACKAGE=	Yes
 
 # uses pledge()
-WANTLIB=		X11 Xft c fontconfig freetype m util z
+WANTLIB=		X11 Xft c fontconfig freetype m util
 
 MASTER_SITES=		https://dl.suckless.org/st/
+MASTER_SITES0=		https://st.suckless.org/patches/scrollback/
 
 MAKE_ENV=		LDFLAGS="${LDFLAGS}" \
 			X11INC=${X11BASE}/include \
 			X11LIB=${X11BASE}/lib
 
 NO_TEST=		Yes
+
+FLAVORS=		scrollback
+FLAVOR?=
+
+.if ${FLAVOR:Mscrollback}
+PATCHFILES=		${SUPDISTFILES}
+.endif
+PATCH_DIST_STRIP=	-p1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKBUILD}/st ${PREFIX}/bin/

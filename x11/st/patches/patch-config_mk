@@ -1,8 +1,7 @@
-$OpenBSD: patch-config_mk,v 1.12 2020/06/29 14:36:10 mestre Exp $
 Index: config.mk
 --- config.mk.orig
 +++ config.mk
-@@ -26,10 +26,10 @@ STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)
+@@ -26,11 +26,11 @@ STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)
  STLDFLAGS = $(LIBS) $(LDFLAGS)
  
  # OpenBSD:
