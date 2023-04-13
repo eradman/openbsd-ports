@@ -13,16 +13,10 @@ Customized Ports
 
 * x11/st : solarized color scheme
 
-Patch Overlays
---------------
-
-* www/chromium : Enable Kerberos, backport fix to policy path
-
 Database
 --------
 
 * databases/pg_auto_failover
-* databases/pgbackrest
 
 Misc
 ----
