@@ -17,6 +17,7 @@ Database
 --------
 
 * databases/pg_auto_failover
+* databases/pg_hint_plan
 
 Misc
 ----
