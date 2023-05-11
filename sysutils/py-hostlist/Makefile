@@ -2,7 +2,7 @@
 
 COMMENT =	expand/collect hostlists
 
-VERSON =	1.20
+VERSON =	1.23.0
 DISTNAME =	python-hostlist-${VERSON}
 PKGNAME =	py-hostlist-${VERSON}
 CATEGORIES =	sysutils
