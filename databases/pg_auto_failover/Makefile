@@ -1,19 +1,17 @@
-# $OpenBSD: $
-
 COMMENT =	extension for automating failover
 
 V =		2.0
 DISTNAME =	pg_auto_failover-${V}
 
 CATEGORIES =	databases
-HOMEPAGE =	https://github.com/citusdata/pg_auto_failover
+HOMEPAGE =	https://github.com/hapostgres/pg_auto_failover
 MAINTAINER =	Eric Radman <ericshane@eradman.com>
 
 # PostgreSQL
 PERMIT_PACKAGE =	Yes
 
 DISTFILES =	v${V}.tar.gz
-MASTER_SITES =	https://github.com/citusdata/pg_auto_failover/archive/
+MASTER_SITES =	https://github.com/hapostgres/pg_auto_failover/archive/
 
 WRKDIST =	${WRKDIR}/pg_auto_failover-${V}
 
