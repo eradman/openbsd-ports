@@ -4,14 +4,13 @@ V =		2.0
 DISTNAME =	pg_auto_failover-${V}
 
 CATEGORIES =	databases
-HOMEPAGE =	https://github.com/hapostgres/pg_auto_failover
+GH_ACCOUNT =	hapostgres
+GH_PROJECT =	pg_auto_failover
+GH_TAGNAME =	v${V}
 MAINTAINER =	Eric Radman <ericshane@eradman.com>
 
 # PostgreSQL
 PERMIT_PACKAGE =	Yes
-
-DISTFILES =	v${V}.tar.gz
-MASTER_SITES =	https://github.com/hapostgres/pg_auto_failover/archive/
 
 WRKDIST =	${WRKDIR}/pg_auto_failover-${V}
 
