@@ -2,7 +2,7 @@
 
 COMMENT =	configure systems using labeled scripts
 
-V =	2.6
+V =	2.8
 DISTNAME =	rset-${V}
 
 CATEGORIES =	sysutils
@@ -18,7 +18,7 @@ WANTLIB +=	c
 
 TEST_DEPENDS = lang/ruby/3.2
 
-MASTER_SITES =	http://scriptedconfiguration.org/code/ \
+SITES =	http://scriptedconfiguration.org/code/ \
 		https://github.com/eradman/rset/archive/${V}/
 
 MAKE_FILE =	Makefile.bsd
