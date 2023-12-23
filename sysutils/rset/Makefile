@@ -2,7 +2,7 @@
 
 COMMENT =	configure systems using labeled scripts
 
-V =	2.8
+V =	2.9
 DISTNAME =	rset-${V}
 
 CATEGORIES =	sysutils
