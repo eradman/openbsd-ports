@@ -1,0 +1,4 @@
+pg_cron is a simple cron-based job scheduler for PostgreSQL that runs
+inside the database as an extension. It uses the same syntax as regular
+cron, but it allows you to schedule PostgreSQL commands directly from
+the database.
