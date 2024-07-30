@@ -1,6 +1,6 @@
 COMMENT = Run periodic jobs in PostgreSQL
 
-V = 1.6.2
+V = 1.6.3
 TAG = v${V}
 DISTNAME = pg_cron-${V}
 
