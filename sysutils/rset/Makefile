@@ -16,15 +16,21 @@ PERMIT_PACKAGE = Yes
 
 WANTLIB +=	c
 
-TEST_DEPENDS = lang/ruby/3.2
+TEST_DEPENDS = lang/ruby/3.3
 
 SITES =	http://scriptedconfiguration.org/code/ \
 		https://github.com/eradman/rset/archive/${V}/
 
-MAKE_FILE =	Makefile.bsd
-MAKE_FLAGS =	CC="${CC}" LDFLAGS="${LDFLAGS}"
-FAKE_FLAGS =	DESTDIR=""
+MODULES =	lang/ruby
+MODRUBY_BUILDDEP =	No
+MODRUBY_RUNDEP =	No
 
-TEST_TARGET =	test
+TEST_DEPENDS =	${MODRUBY_BUILD_DEPENDS} \
+				www/ruby-webrick,${MODRUBY_FLAVOR}
+
+CONFIGURE_STYLE =	simple
+
+FAKE_FLAGS =	DESTDIR=''
+TEST_FLAGS =	RUBY=${RUBY}
 
 .include <bsd.port.mk>
