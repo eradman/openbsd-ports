@@ -1,6 +1,6 @@
 COMMENT = Run periodic jobs in PostgreSQL
 
-V = 1.6.3
+V = 1.6.4
 TAG = v${V}
 DISTNAME = pg_cron-${V}
 
@@ -18,7 +18,7 @@ GH_TAGNAME =	${TAG}
 WANTLIB += c m pq
 
 LIB_DEPENDS = databases/postgresql
-RUN_DEPENDS = postgresql-server->=16,<17:databases/postgresql,-server
+RUN_DEPENDS = postgresql-server->=17,<18:databases/postgresql,-server
 BUILD_DEPENDS = ${RUN_DEPENDS} devel/gmake
 
 USE_GMAKE = Yes
