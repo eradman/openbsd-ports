@@ -1,4 +1,5 @@
 SUBDIR =
+SUBDIR += duckdb
 SUBDIR += ephemeralpg
 SUBDIR += pg_auto_failover
 SUBDIR += pg_cron
