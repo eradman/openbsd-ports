@@ -18,8 +18,8 @@ GH_TAGNAME =	${TAG}
 WANTLIB += c m pq
 
 LIB_DEPENDS = databases/postgresql
-RUN_DEPENDS = postgresql-server->=17,<18:databases/postgresql,-server
-BUILD_DEPENDS = ${RUN_DEPENDS} devel/gmake
+BUILD_DEPENDS = databases/postgresql,-server devel/gmake
+RUN_DEPENDS = databases/postgresql,-server
 
 USE_GMAKE = Yes
 CONFIGURE_STYLE = None
