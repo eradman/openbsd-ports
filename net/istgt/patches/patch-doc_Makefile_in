@@ -1,0 +1,12 @@
+Index: doc/Makefile.in
+--- doc/Makefile.in.orig
++++ doc/Makefile.in
+@@ -49,8 +49,6 @@ dist: $(DISTFILES)
+ 
+ install: install-dirs
+ 	$(INSTALL) -m 0644 istgt.1 $(DESTDIR)$(mandir)/man1/
+-	-rm -f $(DESTDIR)$(mandir)/man1/istgt.1.gz
+-	gzip -9 $(DESTDIR)$(mandir)/man1/istgt.1
+ 
+ install-doc: install-doc-dirs
+ 	$(INSTALL) -m 0644 $(top_srcdir)/README $(DESTDIR)$(datadir)/doc/istgt/

@@ -1,0 +1,11 @@
+@bin bin/istgt
+@bin bin/istgtcontrol
+share/examples/istgt/
+share/examples/istgt/istgt/
+share/examples/istgt/istgt/auth.conf.sample
+share/examples/istgt/istgt/istgt.conf.sample
+share/examples/istgt/istgt/istgt.large.conf.sample
+share/examples/istgt/istgt/istgtcontrol.conf.sample
+@mandir share/man/
+share/man/man1/
+@man share/man/man1/istgt.1
