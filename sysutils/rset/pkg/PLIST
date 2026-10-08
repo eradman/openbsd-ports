@@ -12,3 +12,16 @@ bin/rsub
 @man man/man1/rset.1
 @man man/man1/rsub.1
 @man man/man5/pln.5
+share/examples/rset/
+share/examples/rset/alpine-unbound/
+share/examples/rset/alpine-unbound/.gitignore
+share/examples/rset/alpine-unbound/nameserver/
+share/examples/rset/alpine-unbound/nameserver.pln
+share/examples/rset/alpine-unbound/nameserver/unbound.conf
+share/examples/rset/alpine-unbound/routes.pln
+share/examples/rset/openbsd-unbound/
+share/examples/rset/openbsd-unbound/.gitignore
+share/examples/rset/openbsd-unbound/nameserver/
+share/examples/rset/openbsd-unbound/nameserver.pln
+share/examples/rset/openbsd-unbound/nameserver/unbound.conf
+share/examples/rset/openbsd-unbound/routes.pln
