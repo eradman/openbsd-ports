@@ -1,6 +1,6 @@
 COMMENT = Run periodic jobs in PostgreSQL
 
-V = 1.6.7
+V = 1.6.8
 TAG = v${V}
 DISTNAME = pg_cron-${V}
 
@@ -15,7 +15,7 @@ GH_ACCOUNT =	citusdata
 GH_PROJECT =	pg_cron
 GH_TAGNAME =	${TAG}
 
-WANTLIB += c m pq
+WANTLIB += c pq
 
 LIB_DEPENDS = databases/postgresql
 BUILD_DEPENDS = databases/postgresql,-server devel/gmake
